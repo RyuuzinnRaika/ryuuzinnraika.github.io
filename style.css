@@ -162,3 +162,21 @@ body{font-size:16px;line-height:1.9}
 .closing-links .closing-button{width:100%}
 @media(max-width:700px){.secondary-link{font-size:14px}.personality-notes{padding:24px 20px}.personality-notes ol{grid-template-columns:1fr;gap:17px}.personality-notes li p{font-size:15px}.interest-columns{grid-template-columns:1fr;gap:28px}.closing-links{margin-top:32px;gap:16px;max-width:230px}.closing-links .closing-button{margin-top:0}}
 @media(max-width:400px){.hero-actions{column-gap:17px}.secondary-link{font-size:13px}.personality-notes h3{font-size:20px}}
+
+
+/* Small personal diary: readable, stationery-like, with no external assets. */
+.everyday{margin-top:70px;padding-top:28px;border-top:1px solid var(--line);scroll-margin-top:28px}
+.everyday-overline{display:block;font:700 13px/1.5 Georgia,serif;letter-spacing:.11em;color:#416f92}
+.everyday-header h3{font-family:var(--serif);font-size:clamp(24px,2.2vw,32px);line-height:1.5;letter-spacing:-.045em;margin:12px 0}
+.everyday-header>p{font-size:16px;line-height:2;color:#415d72;margin:0 0 28px}
+.everyday-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.everyday-entry{padding:22px 19px 21px;border:1px solid #d5e7f1;border-top:4px solid #bde9ff;background:#f5fbff;border-radius:0 0 7px 7px;min-width:0}
+.everyday-entry:nth-child(2){background:#f8f7ff;border-top-color:#d6d3ff}
+.everyday-entry:nth-child(3){background:#fffbf2;border-top-color:#f2deab}
+.everyday-date{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;color:#456c86;font-size:13px;font-weight:700}
+.everyday-date span{font-size:12px;font-weight:600;white-space:nowrap}
+.everyday-entry h4{font-family:var(--serif);font-size:20px;line-height:1.65;letter-spacing:-.025em;margin:16px 0 10px}
+.everyday-entry p{color:#415d72;font-size:15px;line-height:1.95;margin:0}
+.everyday-note{font-size:13px;color:var(--muted);line-height:1.8;margin:18px 0 0}
+@media(max-width:1060px){.everyday-grid{grid-template-columns:1fr;gap:16px}.everyday-entry{padding:21px 22px}.everyday-header>p{font-size:16px}}
+@media(max-width:700px){.everyday{margin-top:49px;padding-top:25px}.everyday-header h3{font-size:26px}.everyday-header>p{font-size:15px}.everyday-entry h4{font-size:20px}.everyday-entry p{font-size:15px}.everyday-note{font-size:13px}}
