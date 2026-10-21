@@ -5,3 +5,34 @@
 @media(max-width:700px){.page-shell{padding:0 21px}.site-header{min-height:78px;flex-wrap:wrap;justify-content:space-between;gap:0 12px;padding:16px 0 10px}.wordmark{font-size:12px}.header-github{border:0;padding:0}.header-nav{order:3;width:100%;margin:8px 0 0;gap:23px;justify-content:flex-start}.header-nav a{font-size:10px}.hero{display:block;padding:64px 0 82px}.eyebrow{margin-bottom:31px}.hero h1{font-size:clamp(49px,10vw,70px);line-height:1.45;margin-bottom:25px}.hero-lede{font-size:13px;line-height:2.1}.wide-only{display:none}.hero-actions{margin-top:30px;gap:18px}.hero-aside{margin:67px 6px 0 auto;width:min(78%,300px);min-height:250px;padding:17px;box-shadow:9px 10px 0 #e6e6dd}.notebook-title{padding:17px 2px 0;font-size:26px;line-height:1.5}.notebook-ruling{gap:17px;margin-bottom:20px}.content-section{display:block;padding:76px 0}.section-heading{margin-bottom:39px}.section-heading h2{font-size:31px}.section-sidenote{margin-top:13px}.about-content .about-intro{font-size:23px}.quick-facts{margin-top:35px}.quick-facts>div{grid-template-columns:110px 1fr;gap:10px}.work-item{grid-template-columns:31px 1fr 19px;gap:10px;padding:28px 0}.work-content h3{font-size:24px}.work-content p{font-size:12px}.interest-columns{grid-template-columns:1fr;gap:28px}.interests-intro{font-size:23px;margin-bottom:35px}.interest{padding-top:12px}.interest h3{font-size:17px;margin:10px 0 3px}.closing{margin-top:35px}.closing-inner{display:block;padding:45px 27px}.closing h2{font-size:29px}.closing-button{margin-top:35px;max-width:210px}.site-footer{min-height:140px;align-content:center;justify-content:space-between;flex-wrap:wrap;padding:25px 0;gap:3px 15px}.site-footer p{order:3;width:100%;margin:0}.site-footer>span{font-size:9px}}
 @media(max-width:400px){.header-nav{gap:15px}.header-nav a{font-size:9px}.hero h1{font-size:46px}.quick-facts>div{grid-template-columns:95px 1fr}.fact-value{font-size:12px}.all-projects{display:block}.all-projects a{display:inline-block;margin-top:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* History / 経歴を読み物として見せるための年表 */
+.history-content{max-width:790px}
+.history-intro{font-family:var(--serif);font-size:clamp(17px,1.55vw,23px);line-height:2;letter-spacing:-.02em;margin:0 0 35px}
+.history-timeline{list-style:none;padding:0;margin:0;border-top:2px solid var(--ink)}
+.history-item{display:grid;grid-template-columns:105px minmax(0,1fr);gap:26px;border-bottom:1px solid var(--line);padding:27px 0 30px}
+.history-when{display:flex;flex-direction:column;gap:4px;padding-top:4px;white-space:nowrap}
+.history-year{font:700 16px/1.5 Georgia,var(--serif);letter-spacing:-.03em;color:var(--accent)}
+.history-month{font-size:11px;line-height:1.5;color:var(--muted)}
+.history-type{font-size:10px;font-weight:700;letter-spacing:.11em;color:var(--muted)}
+.history-entry h3{font-family:var(--serif);font-size:clamp(18px,1.65vw,24px);font-weight:600;line-height:1.55;letter-spacing:-.04em;margin:8px 0 10px}
+.history-entry p{font-size:13px;line-height:2.2;color:#51554e;margin:0}
+.history-footnote{display:grid;grid-template-columns:105px minmax(0,1fr);gap:26px;padding:26px 0 0}
+.history-footnote-label{font-size:11px;font-weight:700;color:var(--accent)}
+.history-footnote p{font-size:12px;line-height:2.15;color:var(--muted);margin:0}
+@media(max-width:700px){
+ .header-nav{justify-content:space-between;gap:10px}
+ .header-nav a{font-size:10px;white-space:nowrap}
+ .history-intro{font-size:19px;margin-bottom:25px}
+ .history-item{grid-template-columns:78px minmax(0,1fr);gap:14px;padding:23px 0 26px}
+ .history-year{font-size:13px}
+ .history-entry h3{font-size:19px}
+ .history-entry p{font-size:12px}
+ .history-footnote{grid-template-columns:78px minmax(0,1fr);gap:14px}
+}
+@media(max-width:400px){
+ .header-nav{gap:7px}
+ .header-nav a{font-size:10px}
+ .history-item,.history-footnote{grid-template-columns:70px minmax(0,1fr);gap:12px}
+ .history-year{font-size:12px}
+}
