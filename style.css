@@ -144,3 +144,21 @@ body{font-size:16px;line-height:1.9}
 
 /* Contrast guard: keep link-sized accent text readable against the light page. */
 .section-number,.work-index,.history-year,.interest-num,.heading-dot{color:#236995}
+
+
+/* Personal notes and social links. The original sky-blue palette stays intact. */
+.secondary-link{display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;color:var(--accent);border-bottom:2px solid var(--sky-strong);padding-bottom:4px;white-space:nowrap}
+.secondary-link:hover{color:var(--ink);border-color:var(--ink)}
+.secondary-link span{font-size:18px;font-weight:400}
+.personality-notes{margin:45px 0 35px;padding:29px 32px 32px;background:#f0f9ff;border-left:4px solid var(--sky-strong);border-radius:0 9px 9px 0}
+.personality-notes h3{font-family:var(--serif);font-size:clamp(20px,1.8vw,26px);line-height:1.65;letter-spacing:-.04em;margin:0 0 23px}
+.personality-notes ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 28px}
+.personality-notes li{border-top:1px solid #c6e2f2;padding-top:12px}
+.personality-notes .notes-step{display:block;color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.04em}
+.personality-notes li p{margin:6px 0 0;font-size:15px;line-height:1.9}
+.interest-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:33px 46px}
+.interest:nth-child(4){border-top-color:#f2c3d9}
+.closing-links{display:flex;flex-direction:column;gap:20px;min-width:195px}
+.closing-links .closing-button{width:100%}
+@media(max-width:700px){.secondary-link{font-size:14px}.personality-notes{padding:24px 20px}.personality-notes ol{grid-template-columns:1fr;gap:17px}.personality-notes li p{font-size:15px}.interest-columns{grid-template-columns:1fr;gap:28px}.closing-links{margin-top:32px;gap:16px;max-width:230px}.closing-links .closing-button{margin-top:0}}
+@media(max-width:400px){.hero-actions{column-gap:17px}.secondary-link{font-size:13px}.personality-notes h3{font-size:20px}}

@@ -10,6 +10,9 @@
   <meta property="og:title" content="Ryuuzinn Raika — 作って、試して、腑に落とす。">
   <meta property="og:description" content="気になった仕組みを、手を動かして確かめる。Ryuuzinn Raikaの個人サイト。">
   <meta name="robots" content="index,follow">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@RyuuzinnRaika">
+  <link rel="canonical" href="https://ryuuzinnraika.github.io/">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css">
   <title>Ryuuzinn Raika | 作って、試して、腑に落とす。</title>
@@ -33,8 +36,8 @@
         <div class="hero-main">
           <p class="eyebrow"><span class="eyebrow-line"></span> ABOUT THIS PERSON <span class="eyebrow-count">/ 001</span></p>
           <h1 id="hero-title">作って、<br>試して、<br><span class="hand-underline">腑に落とす。</span></h1>
-          <p class="hero-lede">ネットワークも、アプリも、目に見えない仕組みほどおもしろい。<br class="wide-only">気になったら、自分で動かして確かめています。</p>
-          <div class="hero-actions"><a href="#works" class="primary-link">作っているものを見る <span aria-hidden="true">↗</span></a><span class="hero-notice">個人の開発記録 / 2026</span></div>
+          <p class="hero-lede">電気からネットワーク、アプリ、そしてXRへ。<br class="wide-only">「なんで動くんだろう？」を、そのままにできない人です。</p>
+          <div class="hero-actions"><a href="#works" class="primary-link">作っているものを見る <span aria-hidden="true">↗</span></a><a class="secondary-link" href="https://x.com/RyuuzinnRaika" target="_blank" rel="noopener noreferrer">X プロフィール <span aria-hidden="true">↗</span></a><span class="hero-notice">個人の開発記録 / 2026</span></div>
         </div>
         <aside class="hero-aside" aria-label="小さな自己紹介">
           <div class="notebook-top"><span>FIELD NOTES</span><span>No. 01</span></div>
@@ -50,8 +53,12 @@
         <div class="section-body about-content">
           <p class="about-intro">はじめまして。<strong>Ryuuzinn Raika</strong> です。</p>
           <p>工業高校で電気分野を学び、石川県にある工業系大学へ進学しました。現在は情報技術を学びながら、ソフトウェアやネットワークに関するものづくりをしています。使って終わりにするよりも、「この裏側はどうなっているんだろう」と考えて、実際に作ったり調べたりするのが好きです。</p>
-          <p>通信の設計から使い勝手の細かな部分まで、興味は少し広め。完成したものだけでなく、途中で見つかった課題や試行錯誤も大切にしています。</p>
-          <div class="quick-facts" aria-label="自己紹介の補足"><div><span class="fact-label">いま</span><span class="fact-value">石川県内の工業系大学・学部4年生</span></div><div><span class="fact-label">よく触るもの</span><span class="fact-value">Rust / Python / Kotlin / C#</span></div><div><span class="fact-label">好きなこと</span><span class="fact-value">仕組みを調べて、再現すること</span></div></div>
+          <p>通信の設計から使い勝手の細かな部分まで、興味は少し広め。新しい技術を知ったり、難しかった仕組みが理解できたり、「これなら自分でも作れるかも」と思える瞬間が好きです。完成したものだけでなく、途中で見つかった課題や試行錯誤も大切にしています。</p>
+          <div class="quick-facts" aria-label="自己紹介の補足"><div><span class="fact-label">いま</span><span class="fact-value">石川県内の工業系大学・学部4年生</span></div><div><span class="fact-label">よく触るもの</span><span class="fact-value">Rust / Python / Kotlin / C#</span></div><div><span class="fact-label">好きなこと</span><span class="fact-value">仕組みを調べて、再現すること</span></div><div><span class="fact-label">息抜き</span><span class="fact-value">ゲーム・きらら系の日常アニメ</span></div><div><span class="fact-label">好きな色</span><span class="fact-value">スカイブルーと淡いパステル</span></div></div>
+          <div class="personality-notes" aria-labelledby="personality-heading">
+            <h3 id="personality-heading">「気になる」から始まる、いつもの流れ。</h3>
+            <ol><li><span class="notes-step">01 / 発見</span><p>知らない仕組みや新しい技術に出会う。</p></li><li><span class="notes-step">02 / 試作</span><p>仕様を調べ、手元のPCやサーバーで動かしてみる。</p></li><li><span class="notes-step">03 / 検証</span><p>動かなければログや通信を見て、原因を追う。</p></li><li><span class="notes-step">04 / 次へ</span><p>わかったことを、次の制作や研究につなげる。</p></li></ol>
+          </div>
           <p class="profile-extra-links">もう少し詳しく： <a href="#homelab">自宅サーバー <span aria-hidden="true">↗</span></a> <a href="#certifications">資格・顕彰 <span aria-hidden="true">↗</span></a></p>
         </div>
       </section>
@@ -228,12 +235,12 @@
           </a>
           <div class="work-item">
             <span class="work-index">02</span>
-            <div class="work-content"><span class="work-tag">INTEREST / SOFTWARE</span><h3>端末をまたぐ使いやすさ</h3><p>PCやタブレットなど、異なる端末で自然に作業を続けるにはどうすればいいか。操作の流れや通信のあり方を考えています。</p><span class="work-status">継続して取り組んでいるテーマ</span></div>
+            <div class="work-content"><span class="work-tag">PERSONAL DEVELOPMENT / WINDOWS × ANDROID</span><h3>PCとタブレットをつなぐ道具</h3><p>Windowsで開いたPDFにタブレットのペンで書き込み、その続きをPCに戻す。通信だけでなく、ズームや手書きの操作感まで考えながら試作しています。</p><span class="work-status">個人開発・検証中 / ソースへのリンクは未掲載</span></div>
             <span class="work-arrow muted" aria-hidden="true">—</span>
           </div>
           <div class="work-item">
             <span class="work-index">03</span>
-            <div class="work-content"><span class="work-tag">INTEREST / SYSTEMS</span><h3>壊れても動く仕組み</h3><p>一部が使えなくなっても、全体として動き続けられる設計に興味があります。通信と分散システムを、実装と実験を通して学んでいます。</p><span class="work-status">学習・研究中</span></div>
+            <div class="work-content"><span class="work-tag">RESEARCH / DISTRIBUTED SYSTEMS</span><h3>サーバーが故障しても、ログインしたい</h3><p>一部の認証サーバーが停止しても利用できる仕組みを研究しています。サーバーの故障率とログイン成功率の関係を、実装と実験で確かめています。</p><span class="work-status">研究・検証中 / 詳細な内部構成は非公開</span></div>
             <span class="work-arrow muted" aria-hidden="true">—</span>
           </div>
           <div class="all-projects"><span>ほかの公開コードも、GitHubに置いています。</span><a href="https://github.com/RyuuzinnRaika?tab=repositories" target="_blank" rel="noopener noreferrer">リポジトリ一覧を見る <span aria-hidden="true">↗</span></a></div>
@@ -243,13 +250,13 @@
       <section class="content-section interests-section" id="interests" aria-labelledby="interests-heading">
         <div class="section-heading"><p class="section-number">06 / INTERESTS</p><h2 id="interests-heading">興味のあること<span class="heading-dot">.</span></h2></div>
         <div class="section-body interests-content">
-          <p class="interests-intro">技術を単独で見るより、<br>組み合わせたときの可能性を考えるのが好きです。</p>
-          <div class="interest-columns"><div class="interest"><span class="interest-num">[ 01 ]</span><h3>ネットワーク</h3><p>プロトコル、VPN、ルーティング。データが届くまでの仕組み。</p></div><div class="interest"><span class="interest-num">[ 02 ]</span><h3>アプリケーション</h3><p>WindowsやAndroidで、作業の手間を減らす道具づくり。</p></div><div class="interest"><span class="interest-num">[ 03 ]</span><h3>XR・新しい操作</h3><p>画面の外にも広がるインターフェースと、人の操作感覚。</p></div></div>
+          <p class="interests-intro">ネットワークも、ゲームも、アニメも。<br>好きなものが、作りたいものにつながっています。</p>
+          <div class="interest-columns"><div class="interest"><span class="interest-num">[ 01 ]</span><h3>ネットワーク</h3><p>プロトコル、VPN、ルーティング。データが届くまでの仕組み。</p></div><div class="interest"><span class="interest-num">[ 02 ]</span><h3>アプリケーション</h3><p>WindowsやAndroidで、作業の手間を減らす道具づくり。</p></div><div class="interest"><span class="interest-num">[ 03 ]</span><h3>XR・新しい操作</h3><p>画面の外にも広がるインターフェースと、人の操作感覚。</p></div><div class="interest"><span class="interest-num">[ 04 ]</span><h3>ゲーム・日常系アニメ</h3><p>ゲームも、きらら系の穏やかな日常作品も好き。このサイトの水色も、そんな好みから。</p></div></div>
         </div>
       </section>
 
       <section class="closing" aria-labelledby="closing-heading">
-        <div class="closing-inner"><div><p class="closing-label">SAY HELLO</p><h2 id="closing-heading">面白そうなことは、<br>まだまだあります。</h2><p>制作物や活動は、GitHubからたどれます。</p></div><a class="closing-button" href="https://github.com/RyuuzinnRaika" target="_blank" rel="noopener noreferrer">GitHubで見る <span aria-hidden="true">↗</span></a></div>
+        <div class="closing-inner"><div><p class="closing-label">FIND ME ONLINE</p><h2 id="closing-heading">面白そうなことは、<br>まだまだあります。</h2><p>公開コードはGitHubに。Xの公開プロフィールにもリンクしています。</p></div><div class="closing-links"><a class="closing-button" href="https://github.com/RyuuzinnRaika" target="_blank" rel="noopener noreferrer">GitHubで見る <span aria-hidden="true">↗</span></a><a class="closing-button" href="https://x.com/RyuuzinnRaika" target="_blank" rel="noopener noreferrer">X プロフィール <span aria-hidden="true">↗</span></a></div></div>
       </section>
     </main>
 
