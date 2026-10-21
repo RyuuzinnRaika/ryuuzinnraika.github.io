@@ -314,16 +314,17 @@
         <div class="section-heading"><p class="section-number">07 / TRY IT</p><h2 id="lab-demo-heading">ちょっと実験<span class="heading-dot">.</span></h2><p class="section-sidenote">読むだけでは、<br>わからないこともある。</p></div>
         <div class="section-body">
           <div class="lab-demo-intro"><span class="lab-sticker">MINI LAB / 01</span><h3>サーバーが止まったら、どうなる？</h3><p>7台のサーバーをクリックして、稼働・停止を切り替えてみてください。ここでは<strong>4台以上が稼働なら継続できる</strong>という単純な仮定を使います。</p></div>
+          <noscript><p class="demo-noscript">JavaScriptが無効なため、こちらは静的な見本です。制作ノートの本文や開閉式の説明はそのまま読めます。</p></noscript>
           <div class="fault-lab" data-fault-lab>
             <div class="fault-lab-head"><span>NODE STATUS / 概念デモ</span><span id="demo-online-count">7 / 7 ONLINE</span></div>
             <div class="fault-nodes" aria-label="サーバーの稼働状態を切り替える">
-              <button type="button" class="fault-node" data-node="1" aria-pressed="true" aria-label="サーバー1 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>01</strong><small>稼働中</small></button>
-              <button type="button" class="fault-node" data-node="2" aria-pressed="true" aria-label="サーバー2 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>02</strong><small>稼働中</small></button>
-              <button type="button" class="fault-node" data-node="3" aria-pressed="true" aria-label="サーバー3 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>03</strong><small>稼働中</small></button>
-              <button type="button" class="fault-node" data-node="4" aria-pressed="true" aria-label="サーバー4 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>04</strong><small>稼働中</small></button>
-              <button type="button" class="fault-node" data-node="5" aria-pressed="true" aria-label="サーバー5 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>05</strong><small>稼働中</small></button>
-              <button type="button" class="fault-node" data-node="6" aria-pressed="true" aria-label="サーバー6 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>06</strong><small>稼働中</small></button>
-              <button type="button" class="fault-node" data-node="7" aria-pressed="true" aria-label="サーバー7 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>07</strong><small>稼働中</small></button>
+              <button type="button" class="fault-node" disabled data-node="1" aria-pressed="true" aria-label="サーバー1 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>01</strong><small>稼働中</small></button>
+              <button type="button" class="fault-node" disabled data-node="2" aria-pressed="true" aria-label="サーバー2 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>02</strong><small>稼働中</small></button>
+              <button type="button" class="fault-node" disabled data-node="3" aria-pressed="true" aria-label="サーバー3 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>03</strong><small>稼働中</small></button>
+              <button type="button" class="fault-node" disabled data-node="4" aria-pressed="true" aria-label="サーバー4 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>04</strong><small>稼働中</small></button>
+              <button type="button" class="fault-node" disabled data-node="5" aria-pressed="true" aria-label="サーバー5 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>05</strong><small>稼働中</small></button>
+              <button type="button" class="fault-node" disabled data-node="6" aria-pressed="true" aria-label="サーバー6 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>06</strong><small>稼働中</small></button>
+              <button type="button" class="fault-node" disabled data-node="7" aria-pressed="true" aria-label="サーバー7 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>07</strong><small>稼働中</small></button>
             </div>
             <div class="fault-summary"><div aria-live="polite" aria-atomic="true"><span class="fault-summary-label">SIMPLE RULE / 4+ ONLINE</span><p id="demo-result" class="fault-demo-result">継続できる状態です</p><p id="demo-explanation" class="fault-explanation">7台が稼働。3台まで停止しても条件を満たします。</p></div><div class="fault-lab-actions js-only"><button type="button" id="demo-fail-three">3台停止させる</button><button type="button" id="demo-reset">全台復旧</button></div></div>
           </div>
