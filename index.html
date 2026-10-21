@@ -49,9 +49,10 @@
         <div class="section-heading"><p class="section-number">01 / PROFILE</p><h2 id="about-heading">私について<span class="heading-dot">.</span></h2></div>
         <div class="section-body about-content">
           <p class="about-intro">はじめまして。<strong>Ryuuzinn Raika</strong> です。</p>
-          <p>大学で情報技術を学びながら、ソフトウェアやネットワークに関するものづくりをしています。使って終わりにするよりも、「この裏側はどうなっているんだろう」と考えて、実際に作ったり調べたりするのが好きです。</p>
+          <p>工業高校で電気分野を学び、石川県にある工業系大学へ進学しました。現在は情報技術を学びながら、ソフトウェアやネットワークに関するものづくりをしています。使って終わりにするよりも、「この裏側はどうなっているんだろう」と考えて、実際に作ったり調べたりするのが好きです。</p>
           <p>通信の設計から使い勝手の細かな部分まで、興味は少し広め。完成したものだけでなく、途中で見つかった課題や試行錯誤も大切にしています。</p>
-          <div class="quick-facts" aria-label="自己紹介の補足"><div><span class="fact-label">いま</span><span class="fact-value">情報技術を学ぶ学部4年生</span></div><div><span class="fact-label">よく触るもの</span><span class="fact-value">Rust / Python / Kotlin / C#</span></div><div><span class="fact-label">好きなこと</span><span class="fact-value">仕組みを調べて、再現すること</span></div></div>
+          <div class="quick-facts" aria-label="自己紹介の補足"><div><span class="fact-label">いま</span><span class="fact-value">石川県内の工業系大学・学部4年生</span></div><div><span class="fact-label">よく触るもの</span><span class="fact-value">Rust / Python / Kotlin / C#</span></div><div><span class="fact-label">好きなこと</span><span class="fact-value">仕組みを調べて、再現すること</span></div></div>
+          <p class="profile-extra-links">もう少し詳しく： <a href="#homelab">自宅サーバー <span aria-hidden="true">↗</span></a> <a href="#certifications">資格・顕彰 <span aria-hidden="true">↗</span></a></p>
         </div>
       </section>
 
@@ -77,8 +78,16 @@
               <div class="history-when"><span class="history-year">高校時代</span></div>
               <div class="history-entry">
                 <span class="history-type">学び</span>
-                <h3>電気分野を学ぶ</h3>
-                <p>高校では電気分野を学び、資格取得にも目を向けていました。美術部では、仲間を通じてゲームの絵に触れる機会もありました。</p>
+                <h3>工業高校で電気分野を学ぶ</h3>
+                <p>工業高校では電気分野を学び、資格・検定の取得にも取り組みました。美術部では、仲間を通じてゲームの絵に触れる機会もありました。</p>
+              </div>
+            </li>
+            <li class="history-item">
+              <div class="history-when"><span class="history-year">2023</span><span class="history-month">進学</span></div>
+              <div class="history-entry">
+                <span class="history-type">進学</span>
+                <h3>石川県内の工業系大学へ</h3>
+                <p>工業高校での学びを土台に、大学では情報技術をさらに深く学び始めました。</p>
               </div>
             </li>
             <li class="history-item">
@@ -145,8 +154,72 @@
         </div>
       </section>
 
+
+      <section class="content-section lab-section" id="homelab" aria-labelledby="homelab-heading">
+        <div class="section-heading">
+          <p class="section-number">03 / HOME LAB</p>
+          <h2 id="homelab-heading">自宅サーバー<span class="heading-dot">.</span></h2>
+          <p class="section-sidenote">実験できる環境を、<br>手元に置いておく。</p>
+        </div>
+        <div class="section-body">
+          <p class="lab-intro">2024年にRaspberry PiでVPNを試し始め、今はPCサーバーやストレージも使いながら、普段の開発や動作検証に活用しています。</p>
+          <dl class="lab-specs">
+            <div><dt>CPU</dt><dd>Intel Core i5-7400</dd></div>
+            <div><dt>Memory</dt><dd>40 GB</dd></div>
+            <div><dt>Storage</dt><dd>HDD中心 + SSD併用</dd></div>
+            <div><dt>Environment</dt><dd>Linux / Raspberry Pi</dd></div>
+          </dl>
+          <div class="lab-jobs">
+            <article class="lab-job"><span class="lab-job-index">01</span><div><h3>VPNとネットワークの検証</h3><p>SoftEther VPN、ルーティング、端末間通信などを実際に構築して試しています。</p></div></article>
+            <article class="lab-job"><span class="lab-job-index">02</span><div><h3>NAS・データ保管</h3><p>制作物やビルド成果物を保管し、ストレージ容量や転送速度も考えながら運用しています。</p></div></article>
+            <article class="lab-job"><span class="lab-job-index">03</span><div><h3>自宅でビルドする</h3><p>AndroidアプリなどをLinuxのセルフホストランナーでビルドし、動作検証を繰り返せる環境を整えています。</p></div></article>
+          </div>
+          <p class="section-footnote">※ 2026年時点の構成概要。IPアドレス・接続先・認証情報などは掲載していません。</p>
+        </div>
+      </section>
+
+      <section class="content-section certificates-section" id="certifications" aria-labelledby="certifications-heading">
+        <div class="section-heading">
+          <p class="section-number">04 / QUALIFICATIONS</p>
+          <h2 id="certifications-heading">資格・顕彰<span class="heading-dot">.</span></h2>
+          <p class="section-sidenote">電気から情報まで、<br>学んできたことの記録。</p>
+        </div>
+        <div class="section-body">
+          <p class="cert-intro">工業高校での学びを通して、電気・情報などの資格や検定にも取り組みました。これまで取得・保有として記録したものを掲載します。</p>
+          <div class="cert-columns">
+            <div class="cert-group">
+              <h3>電気・設備・通信</h3>
+              <ul>
+                <li>第一種電気工事士</li>
+                <li>第二種電気工事士</li>
+                <li>2級電気工事施工管理技術検定</li>
+                <li>危険物取扱者 乙種第4類</li>
+                <li>第二級陸上特殊無線技士</li>
+              </ul>
+            </div>
+            <div class="cert-group">
+              <h3>情報・技能</h3>
+              <ul>
+                <li>情報技術検定 2級</li>
+                <li>パソコン利用技術検定 3級</li>
+                <li>計算技術検定 3級</li>
+                <li>3級電子機器組立て技能士</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cert-awards">
+            <h3>顕彰・表彰</h3>
+            <ul>
+              <li><strong>ジュニアマイスターゴールド</strong><span>資格・検定の取り組みに関する顕彰</span></li>
+              <li><strong>工業技術顕彰制度 金賞</strong><span>工業技術分野の顕彰</span></li>
+            </ul>
+          </div>
+          <p class="section-footnote">※ 資格・検定と顕彰は別に整理しています。取得年月、第一種電気工事士の免状交付状況、施工管理技術検定の合格段階は未掲載です。</p>
+        </div>
+      </section>
+
       <section class="content-section works-section" id="works" aria-labelledby="works-heading">
-        <div class="section-heading"><p class="section-number">03 / SELECTED WORK</p><h2 id="works-heading">制作と実験<span class="heading-dot">.</span></h2><p class="section-sidenote">完成品だけではなく、<br>試しながら育てているもの。</p></div>
+        <div class="section-heading"><p class="section-number">05 / SELECTED WORK</p><h2 id="works-heading">制作と実験<span class="heading-dot">.</span></h2><p class="section-sidenote">完成品だけではなく、<br>試しながら育てているもの。</p></div>
         <div class="section-body">
           <a class="work-item work-featured" href="https://github.com/RyuuzinnRaika/IndustrialRust1710" target="_blank" rel="noopener noreferrer" aria-label="IndustrialRust1710の公開リポジトリを開く">
             <span class="work-index">01</span>
@@ -168,7 +241,7 @@
       </section>
 
       <section class="content-section interests-section" id="interests" aria-labelledby="interests-heading">
-        <div class="section-heading"><p class="section-number">04 / INTERESTS</p><h2 id="interests-heading">興味のあること<span class="heading-dot">.</span></h2></div>
+        <div class="section-heading"><p class="section-number">06 / INTERESTS</p><h2 id="interests-heading">興味のあること<span class="heading-dot">.</span></h2></div>
         <div class="section-body interests-content">
           <p class="interests-intro">技術を単独で見るより、<br>組み合わせたときの可能性を考えるのが好きです。</p>
           <div class="interest-columns"><div class="interest"><span class="interest-num">[ 01 ]</span><h3>ネットワーク</h3><p>プロトコル、VPN、ルーティング。データが届くまでの仕組み。</p></div><div class="interest"><span class="interest-num">[ 02 ]</span><h3>アプリケーション</h3><p>WindowsやAndroidで、作業の手間を減らす道具づくり。</p></div><div class="interest"><span class="interest-num">[ 03 ]</span><h3>XR・新しい操作</h3><p>画面の外にも広がるインターフェースと、人の操作感覚。</p></div></div>
