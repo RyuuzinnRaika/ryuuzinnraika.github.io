@@ -15,6 +15,7 @@
   <link rel="canonical" href="https://ryuuzinnraika.github.io/">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css">
+  <script src="./site.js" defer></script>
   <title>Ryuuzinn Raika | 作って、試して、腑に落とす。</title>
 </head>
 <body>
@@ -23,10 +24,11 @@
     <header class="site-header">
       <a href="#top" class="wordmark" aria-label="Ryuuzinn Raika トップへ"><span class="wordmark-icon">r.</span><span>Ryuuzinn Raika</span></a>
       <nav aria-label="メインナビゲーション" class="header-nav">
-        <a href="#about">私について</a>
-        <a href="#history">これまで</a>
-        <a href="#works">制作と実験</a>
-        <a href="#interests">興味</a>
+        <a href="#about">人物</a>
+        <a href="#history">歩み</a>
+        <a href="#fieldnotes">制作ノート</a>
+        <a href="#lab-demo">実験する</a>
+        <a href="#interests">日常</a>
       </nav>
       <a class="header-github" href="https://github.com/RyuuzinnRaika" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
     </header>
@@ -37,7 +39,7 @@
           <p class="eyebrow"><span class="eyebrow-line"></span> ABOUT THIS PERSON <span class="eyebrow-count">/ 001</span></p>
           <h1 id="hero-title">作って、<br>試して、<br><span class="hand-underline">腑に落とす。</span></h1>
           <p class="hero-lede">電気からネットワーク、アプリ、そしてXRへ。<br class="wide-only">「なんで動くんだろう？」を、そのままにできない人です。</p>
-          <div class="hero-actions"><a href="#works" class="primary-link">作っているものを見る <span aria-hidden="true">↗</span></a><a class="secondary-link" href="https://x.com/RyuuzinnRaika" target="_blank" rel="noopener noreferrer">X プロフィール <span aria-hidden="true">↗</span></a><span class="hero-notice">個人の開発記録 / 2026</span></div>
+          <div class="hero-actions"><a href="#fieldnotes" class="primary-link">制作ノートを開く <span aria-hidden="true">↗</span></a><a class="secondary-link" href="#lab-demo">ミニ実験 <span aria-hidden="true">↗</span></a><span class="hero-notice">個人の開発記録 / 2026</span></div><div class="hero-topics" aria-label="いま取り組んでいること"><span>Rust / ゲームサーバー</span><span>端末をつなぐ道具</span><span>分散システム</span></div>
         </div>
         <aside class="hero-aside" aria-label="小さな自己紹介">
           <div class="notebook-top"><span>FIELD NOTES</span><span>No. 01</span></div>
@@ -59,7 +61,7 @@
             <h3 id="personality-heading">「気になる」から始まる、いつもの流れ。</h3>
             <ol><li><span class="notes-step">01 / 発見</span><p>知らない仕組みや新しい技術に出会う。</p></li><li><span class="notes-step">02 / 試作</span><p>仕様を調べ、手元のPCやサーバーで動かしてみる。</p></li><li><span class="notes-step">03 / 検証</span><p>動かなければログや通信を見て、原因を追う。</p></li><li><span class="notes-step">04 / 次へ</span><p>わかったことを、次の制作や研究につなげる。</p></li></ol>
           </div>
-          <p class="profile-extra-links">もう少し詳しく： <a href="#homelab">自宅サーバー <span aria-hidden="true">↗</span></a> <a href="#certifications">資格・顕彰 <span aria-hidden="true">↗</span></a> <a href="#everyday">昔の投稿と日常 <span aria-hidden="true">↗</span></a></p>
+          <p class="profile-extra-links">もう少し詳しく： <a href="#homelab">自宅サーバー <span aria-hidden="true">↗</span></a> <a href="#certifications">資格・顕彰 <span aria-hidden="true">↗</span></a> <a href="#fieldnotes">制作の裏側 <span aria-hidden="true">↗</span></a> <a href="#everyday">昔の投稿と日常 <span aria-hidden="true">↗</span></a></p>
         </div>
       </section>
 
@@ -247,8 +249,91 @@
         </div>
       </section>
 
+
+      <section class="content-section fieldnotes-section" id="fieldnotes" aria-labelledby="fieldnotes-heading">
+        <div class="section-heading"><p class="section-number">06 / FIELD NOTES</p><h2 id="fieldnotes-heading">制作ノート<span class="heading-dot">.</span></h2><p class="section-sidenote">完成品だけではなく、<br>作りながら悩んだことも。</p></div>
+        <div class="section-body">
+          <p class="fieldnotes-lead">普段は「これができたら便利そう」から始まり、仕様を読み、動かしてみて、問題を見つけて直すことの繰り返し。テーマを選ぶと、それぞれの制作メモだけを表示できます。</p>
+          <div class="fieldnotes-toolbar"><div class="fieldnotes-filters js-only" role="group" aria-label="制作テーマで絞り込む">
+            <button type="button" data-project-filter="all" aria-pressed="true">すべて</button><button type="button" data-project-filter="systems" aria-pressed="false">インフラ</button><button type="button" data-project-filter="app" aria-pressed="false">アプリ・XR</button><button type="button" data-project-filter="research" aria-pressed="false">研究</button><button type="button" data-project-filter="web" aria-pressed="false">Web</button>
+          </div><p class="fieldnotes-result" id="fieldnotes-result" aria-live="polite">6件の制作メモ</p></div>
+          <div class="project-notes">
+            <article class="project-note note-blue" data-project-category="systems" id="note-rust">
+              <div class="project-note-top"><span>01 / RUST · GAME SERVER</span><span>開発・検証中</span></div>
+              <h3>昔のMinecraftサーバーを、Rustで作る。</h3>
+              <p>Java Edition 1.7.10向けの通信とゲーム内の処理を、一つずつRustで組み立てています。好きなゲームがどう動くのか、内部から理解したいという試みです。</p>
+              <div class="note-flow"><span>Protocol 5</span><b aria-hidden="true">→</b><span>20 TPS</span><b aria-hidden="true">→</b><span>World / Items</span></div>
+              <details><summary>開発で難しいところ <span aria-hidden="true">＋</span></summary><p>クライアントの申告に頼らず、採掘時間・アイテム消費・保存の整合性をサーバー側で管理すること。かまど、チェスト、クラフトなどは限定機能から実装しています。通常サバイバルの完全再現や実機総合検証はこれからです。</p></details>
+              <a class="project-note-link" href="https://github.com/RyuuzinnRaika/IndustrialRust1710" target="_blank" rel="noopener noreferrer">公開リポジトリを見る ↗</a>
+            </article>
+            <article class="project-note note-lilac" data-project-category="app" id="note-tablet">
+              <div class="project-note-top"><span>02 / WINDOWS × ANDROID</span><span>試作・改良中</span></div>
+              <h3>PDFを送り、ペンで書いて、PCへ戻したい。</h3>
+              <p>資料はPCで扱いたいけれど、手書きはタブレットが便利。端末を切り替えながら自然に作業を続ける道具を作っています。</p>
+              <div class="note-flow"><span>PC</span><b aria-hidden="true">⇄</b><span>PDF + Ink</span><b aria-hidden="true">⇄</b><span>タブレット</span></div>
+              <details><summary>操作感にこだわる理由 <span aria-hidden="true">＋</span></summary><p>ペンの座標とPDFを合わせること、筆圧、ズーム時の操作感、PCへの保存し直しまでが課題。通信が成立するだけではなく、手を止めずに使えることを目指しています。</p></details>
+              <span class="project-note-muted">公開できる概要のみを掲載</span>
+            </article>
+            <article class="project-note note-mint" data-project-category="research" id="note-auth">
+              <div class="project-note-top"><span>03 / DISTRIBUTED SYSTEMS</span><span>研究・実験中</span></div>
+              <h3>サーバーが壊れても、ログインを続けられるか。</h3>
+              <p>認証を一台に頼らず、複数のサーバーで支える仕組みを検討。サーバーの故障率とログイン成功率の関係を、実験で確かめています。</p>
+              <div class="note-flow"><span>構成する</span><b aria-hidden="true">→</b><span>故障させる</span><b aria-hidden="true">→</b><span>測る</span></div>
+              <details><summary>何を比較している？ <span aria-hidden="true">＋</span></summary><p>何台まで停止しても利用できるのか、また応答の速さがどう変わるのかを評価します。下のミニ実験は実研究のシステムや測定結果とは異なります。</p></details>
+              <span class="project-note-muted">内部設定・実測値は未掲載</span>
+            </article>
+            <article class="project-note note-sand" data-project-category="systems" id="note-homelab">
+              <div class="project-note-top"><span>04 / HOME LAB</span><span>運用・改善中</span></div>
+              <h3>自宅に、小さな実験場を置く。</h3>
+              <p>Raspberry PiのVPNから始まり、Linuxサーバー、NAS、Androidの自宅ビルド環境へ。繰り返し実機で試すための環境を整えています。</p>
+              <div class="note-flow"><span>ソース</span><b aria-hidden="true">→</b><span>自宅ビルド</span><b aria-hidden="true">→</b><span>実機テスト</span></div>
+              <details><summary>運用で考えていること <span aria-hidden="true">＋</span></summary><p>VPN・名前解決・ストレージの管理に加え、不要なビルドを増やさず、手順を再現できるようにすること。作るための土台も自分で直しています。</p></details>
+              <a class="project-note-link" href="#homelab">自宅サーバーの紹介へ ↓</a>
+            </article>
+            <article class="project-note note-rose" data-project-category="app" id="note-xr">
+              <div class="project-note-top"><span>05 / XR · UNITY</span><span>構想・試作中</span></div>
+              <h3>普段のPC作業を、別の空間へ。</h3>
+              <p>XRの中でデスクトップを扱えたら、画面や操作はどう変わるのか。Unityを使いながら、表示方法や入力のあり方を検討しています。</p>
+              <div class="note-flow"><span>Desktop</span><b aria-hidden="true">→</b><span>XR空間</span><b aria-hidden="true">→</b><span>操作</span></div>
+              <details><summary>いま考えていること <span aria-hidden="true">＋</span></summary><p>単に画面を空間に浮かべるだけではなく、日常の作業になじむ配置や操作を考えています。対応端末や完成度はまだ検証中です。</p></details>
+              <span class="project-note-muted">実機対応は保証していません</span>
+            </article>
+            <article class="project-note note-white" data-project-category="web" id="note-web">
+              <div class="project-note-top"><span>06 / WEB ARCHIVE</span><span>過去の公開試作</span></div>
+              <h3>小さなWebサイトの試作も。</h3>
+              <p>2024年にはWebサイトのプロトタイプも公開。この個人サイトも、フレームワークなしで読みやすい文章と手触りを考えています。</p>
+              <div class="note-flow"><span>情報を整理</span><b aria-hidden="true">→</b><span>画面を作る</span><b aria-hidden="true">→</b><span>改善する</span></div>
+              <details><summary>残しているもの <span aria-hidden="true">＋</span></summary><p>大きな完成品だけでなく、小さな試作や途中経過も制作の記録として大切にしています。</p></details>
+              <a class="project-note-link" href="https://github.com/RyuuzinnRaika/NukaShinkokaiWebsite" target="_blank" rel="noopener noreferrer">2024年の公開Web試作 ↗</a>
+            </article>
+          </div>
+          <p class="fieldnotes-disclaimer">2026年10月時点の紹介です。公開していないコード・内部ネットワーク・認証情報は掲載していません。開発状況は随時変化します。</p>
+        </div>
+      </section>
+      <section class="content-section lab-demo-section" id="lab-demo" aria-labelledby="lab-demo-heading">
+        <div class="section-heading"><p class="section-number">07 / TRY IT</p><h2 id="lab-demo-heading">ちょっと実験<span class="heading-dot">.</span></h2><p class="section-sidenote">読むだけでは、<br>わからないこともある。</p></div>
+        <div class="section-body">
+          <div class="lab-demo-intro"><span class="lab-sticker">MINI LAB / 01</span><h3>サーバーが止まったら、どうなる？</h3><p>7台のサーバーをクリックして、稼働・停止を切り替えてみてください。ここでは<strong>4台以上が稼働なら継続できる</strong>という単純な仮定を使います。</p></div>
+          <div class="fault-lab" data-fault-lab>
+            <div class="fault-lab-head"><span>NODE STATUS / 概念デモ</span><span id="demo-online-count">7 / 7 ONLINE</span></div>
+            <div class="fault-nodes" aria-label="サーバーの稼働状態を切り替える">
+              <button type="button" class="fault-node" data-node="1" aria-pressed="true" aria-label="サーバー1 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>01</strong><small>稼働中</small></button>
+              <button type="button" class="fault-node" data-node="2" aria-pressed="true" aria-label="サーバー2 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>02</strong><small>稼働中</small></button>
+              <button type="button" class="fault-node" data-node="3" aria-pressed="true" aria-label="サーバー3 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>03</strong><small>稼働中</small></button>
+              <button type="button" class="fault-node" data-node="4" aria-pressed="true" aria-label="サーバー4 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>04</strong><small>稼働中</small></button>
+              <button type="button" class="fault-node" data-node="5" aria-pressed="true" aria-label="サーバー5 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>05</strong><small>稼働中</small></button>
+              <button type="button" class="fault-node" data-node="6" aria-pressed="true" aria-label="サーバー6 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>06</strong><small>稼働中</small></button>
+              <button type="button" class="fault-node" data-node="7" aria-pressed="true" aria-label="サーバー7 稼働中"><span class="fault-led" aria-hidden="true"></span><strong>07</strong><small>稼働中</small></button>
+            </div>
+            <div class="fault-summary"><div aria-live="polite" aria-atomic="true"><span class="fault-summary-label">SIMPLE RULE / 4+ ONLINE</span><p id="demo-result" class="fault-demo-result">継続できる状態です</p><p id="demo-explanation" class="fault-explanation">7台が稼働。3台まで停止しても条件を満たします。</p></div><div class="fault-lab-actions js-only"><button type="button" id="demo-fail-three">3台停止させる</button><button type="button" id="demo-reset">全台復旧</button></div></div>
+          </div>
+          <p class="demo-caveat"><strong>これは仕組みを理解するための概念デモです。</strong>実際の分散認証方式、PBFTの条件、情報の配置、通信遅延、実測したログイン成功率を再現していません。</p>
+          <div class="lab-after"><h3>作るときに、大切にしていること</h3><div class="lab-principles"><div><span>01</span><h4>本当に動くか</h4><p>仕様を読んで終わらず、実際の動作で確かめる。</p></div><div><span>02</span><h4>失敗も記録する</h4><p>エラーや不具合も、次の修正につながる手がかり。</p></div><div><span>03</span><h4>繰り返し試せるか</h4><p>ビルドや検証を再現できる手順にしておく。</p></div></div></div>
+        </div>
+      </section>
+
       <section class="content-section interests-section" id="interests" aria-labelledby="interests-heading">
-        <div class="section-heading"><p class="section-number">06 / INTERESTS</p><h2 id="interests-heading">興味のあること<span class="heading-dot">.</span></h2></div>
+        <div class="section-heading"><p class="section-number">08 / INTERESTS</p><h2 id="interests-heading">興味のあること<span class="heading-dot">.</span></h2></div>
         <div class="section-body interests-content">
           <p class="interests-intro">ネットワークも、ゲームも、アニメも。<br>技術以外のことも、気ままに楽しんでいます。</p>
           <div class="interest-columns"><div class="interest"><span class="interest-num">[ 01 ]</span><h3>ネットワーク</h3><p>プロトコル、VPN、ルーティング。データが届くまでの仕組み。</p></div><div class="interest"><span class="interest-num">[ 02 ]</span><h3>アプリケーション</h3><p>WindowsやAndroidで、作業の手間を減らす道具づくり。</p></div><div class="interest"><span class="interest-num">[ 03 ]</span><h3>XR・新しい操作</h3><p>画面の外にも広がるインターフェースと、人の操作感覚。</p></div><div class="interest"><span class="interest-num">[ 04 ]</span><h3>ゲーム・日常系アニメ</h3><p>ゲームも、きらら系の穏やかな日常作品も好き。このサイトの水色も、そんな好みから。</p></div></div>
