@@ -34,6 +34,7 @@
   if (nodes.length !== 7 || !count || !result || !explanation) return;
 
   const setNode = (node, isOnline) => {
+    node.disabled = false;
     node.dataset.online = String(isOnline);
     node.classList.toggle("is-offline", !isOnline);
     node.setAttribute("aria-pressed", String(isOnline));
