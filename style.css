@@ -76,3 +76,32 @@
   .hero-aside{box-shadow:9px 10px 0 var(--mint-soft)}
   .hero-aside::before{width:70px;height:21px;top:-11px}
 }
+
+/* Home lab and qualifications — match the existing paper-and-pastel design */
+.profile-extra-links{font-size:12px!important;margin-top:24px!important;color:var(--muted)}
+.profile-extra-links a{display:inline-block;color:var(--ink);font-weight:700;margin-left:12px;border-bottom:1px solid var(--accent)}
+.profile-extra-links a:hover{color:var(--accent)}
+.lab-intro,.cert-intro{font-family:var(--serif);font-size:clamp(18px,1.8vw,24px);line-height:1.95;letter-spacing:-.025em;margin:0 0 36px}
+.lab-specs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 38px;border-top:2px solid var(--ink)}
+.lab-specs>div{padding:18px 8px 19px 0;border-bottom:1px solid var(--line);min-width:0}
+.lab-specs dt{font:700 11px/1.7 Georgia,serif;letter-spacing:.08em;color:var(--accent)}
+.lab-specs dd{font-size:15px;font-weight:700;margin:3px 0 0;overflow-wrap:anywhere}
+.lab-jobs{border-top:1px solid var(--line)}
+.lab-job{display:grid;grid-template-columns:38px 1fr;gap:14px;padding:24px 0;border-bottom:1px solid var(--line)}
+.lab-job-index{font:14px Georgia,serif;color:var(--accent)}
+.lab-job h3{font-family:var(--serif);font-weight:600;font-size:21px;margin:0 0 6px;letter-spacing:-.04em}
+.lab-job p{font-size:13px;line-height:2;color:var(--muted);margin:0}
+.section-footnote{font-size:11px;line-height:2.1;color:var(--muted);margin:28px 0 0}
+.cert-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+.cert-group{border-top:2px solid var(--ink);padding-top:16px}
+.cert-group h3,.cert-awards h3{font-size:13px;margin:0 0 15px;letter-spacing:.06em}
+.cert-group ul,.cert-awards ul{list-style:none;padding:0;margin:0}
+.cert-group li{font-size:13px;line-height:1.8;border-bottom:1px solid var(--line);padding:12px 0;overflow-wrap:anywhere}
+.cert-group li::before{content:"—";color:var(--accent);padding-right:10px}
+.cert-awards{margin-top:43px;border-top:2px solid var(--ink);padding-top:17px}
+.cert-awards li{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding:14px 0}
+.cert-awards strong{font-size:13px;font-weight:700}
+.cert-awards span{font-size:11px;color:var(--muted)}
+.lab-section .section-number{color:#376d67}
+.certificates-section .section-number{color:#745e9b}
+@media(max-width:700px){.lab-specs dd{font-size:13px}.lab-job{grid-template-columns:28px 1fr}.lab-job h3{font-size:19px}.lab-job p{font-size:12px}.cert-columns{grid-template-columns:1fr;gap:30px}.cert-awards li{display:block}.cert-awards span{display:block;margin-top:4px}.profile-extra-links a{margin-left:9px}}
